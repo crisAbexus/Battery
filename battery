@@ -9,7 +9,7 @@ battery usage:
     -z            output zsh prompt format
     -e            don't output the emoji
     -a            output ascii instead of spark
-    -b            battery path            default: /sys/class/power_supply/BAT0
+    -b            battery path            default: /sys/class/power_supply/BAT1
     -p            use pmset (more accurate)
   colors:                                                 tmux     zsh
     -g <color>    good battery level      default: 1;32 | green  | 64
@@ -35,7 +35,7 @@ setDefaults() {
     middle_color="1;33"
     warn_color="0;31"
     connected=0
-    battery_path=/sys/class/power_supply/BAT0
+    battery_path=/sys/class/power_supply/BAT1
 }
 
 setDefaults
